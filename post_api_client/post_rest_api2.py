@@ -1,5 +1,6 @@
 import requests
 import urllib3
+import json
 
 # Disable SSL certificate verification
 urllib3.disable_warnings()
@@ -13,6 +14,12 @@ authorization_code = "xxxxxxx"
 # Create the headers with the authorization token
 headers = {
     "Authorization": f"Bearer {authorization_code}",
+    "Instatbase-API-Args": json.dumps({
+        "type": "file",
+        "cursor": 0,
+        "if_exists": "overwrite",
+        "mime_type": "application/pdf"
+    })
 }
 
 # Send the POST request with SSL certificate verification disabled
