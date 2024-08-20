@@ -14,9 +14,23 @@ def separate_records(csv_file, dir_file, file_file):
 
 # Usage example
 csv_file = 'H:/temp/input.csv'
-dir_file = 'directories.txt'
-file_file = 'files.txt'
+dir_file = 'H:/temp/directories.csv'
+file_file = 'H:/temp/files.csv'
 separate_records(csv_file, dir_file, file_file)
 # Move the files to the H:\temp directory
-os.rename(dir_file, 'H:/temp/' + dir_file)
-os.rename(file_file, 'H:/temp/' + file_file)
+#os.rename(dir_file, 'H:/temp/' + dir_file)
+#os.rename(file_file, 'H:/temp/' + file_file)
+def sort_by_file_size(file_file):
+    with open(file_file, 'r') as file:
+        reader = csv.reader(file)
+        rows = list(reader)
+        sorted_rows = sorted(rows, key=lambda row: int(row[4]), reverse=True)
+        for row in sorted_rows:
+            print(','.join(row))
+
+# Usage example
+file_file = 'H:/temp/files.csv'
+sort_by_file_size(file_file)
+
+
+
