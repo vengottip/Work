@@ -1,4 +1,5 @@
 import csv
+import os
 
 def separate_records(csv_file, dir_file, file_file):
     with open(csv_file, 'r') as file:
@@ -12,7 +13,10 @@ def separate_records(csv_file, dir_file, file_file):
                     file_output.write(','.join(row) + '\n')
 
 # Usage example
-csv_file = 'input.csv'
+csv_file = 'H:/temp/input.csv'
 dir_file = 'directories.txt'
 file_file = 'files.txt'
 separate_records(csv_file, dir_file, file_file)
+# Move the files to the H:\temp directory
+os.rename(dir_file, 'H:/temp/' + dir_file)
+os.rename(file_file, 'H:/temp/' + file_file)
