@@ -6,6 +6,24 @@ FROM A.T1;
 
 import cx_Oracle
 import pandas as pd
+import cx_Oracle
+
+# Replace with your actual details
+host = "your_host"          # e.g., "localhost" or "db.example.com"
+port = "1521"               # Default Oracle port
+service_name = "your_service_name"  # e.g., "ORCL"
+
+# Create DSN
+dsn = cx_Oracle.makedsn(host, port, service_name)
+
+connection = cx_Oracle.connect(user="your_username", password="your_password", dsn=dsn)
+
+"""
+dsn = "your_host:1521/your_service_name"
+connection = cx_Oracle.connect(user="your_username", password="your_password", dsn=dsn)
+connection = cx_Oracle.connect(user="your_username", password="your_password", dsn=dsn)
+
+"""
 
 # Load the CSV file into a DataFrame
 metadata_df = pd.read_csv('path_to_your_csv_file.csv')
@@ -35,3 +53,5 @@ for index, row in metadata_df.iterrows():
 # Close the cursor and connection
 cursor.close()
 connection.close()
+
+
