@@ -8,8 +8,8 @@ metadata_df = pd.read_csv('path_to_your_csv_file.csv', dtype={'PK_COL_VAL': 'Int
 connection = cx_Oracle.connect(user="your_username", password="your_password", dsn="your_dsn")
 cursor = connection.cursor()
 
-# Create a DataFrame to store results
-results_df = pd.DataFrame(columns=['TBL_NM', 'COL_NM', 'PK_COL', 'PK_COL_VAL', 'RESULT'])
+# Create a list to store the results
+results_list = []
 
 # Loop through each row in the CSV
 for index, row in metadata_df.iterrows():
@@ -25,15 +25,18 @@ for index, row in metadata_df.iterrows():
     cursor.execute(query, pk_value=pk_value)
     records = cursor.fetchall()
     
-    # Append each record to the DataFrame
+    # Append each record as a dictionary to the list
     for record in records:
-        results_df = results_df.append({
+        results_list.append({
             'TBL_NM': table_name,
             'COL_NM': column_name,
             'PK_COL': pk_column,
             'PK_COL_VAL': pk_value,  # Full integer value preserved
             'RESULT': record[0]
-        }, ignore_index=True)
+        })
+
+# Convert the list of dictionaries into a DataFrame
+results_df = pd.DataFrame(results_list)
 
 # Write the DataFrame to an Excel file
 output_file_path = 'output_records.xlsx'
