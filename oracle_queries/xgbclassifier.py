@@ -47,6 +47,18 @@ for fold_num in range(1, 2):
     X_test = housing_data_test
     y_test = test_y_data['MODIFIED']
 
+    # Impute missing values using the mean (or median, or mode)
+    X_train.fillna(X_train.mean(), inplace=True)
+    X_test.fillna(X_test.mean(), inplace=True)
+
+    # If you prefer median or mode, use the following:
+    # X_train.fillna(X_train.median(), inplace=True)
+    # X_test.fillna(X_test.median(), inplace=True)
+
+    # OR, drop rows with NaNs if feasible:
+    # X_train.dropna(inplace=True)
+    # X_test.dropna(inplace=True)
+
     # Handle class imbalance using SMOTE
     smote = SMOTE(random_state=42)
     X_train, y_train = smote.fit_resample(X_train, y_train)
