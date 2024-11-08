@@ -19,6 +19,18 @@ for fold_num in range(1, 2):
     housing_data_test = pd.read_csv(test_file_path)
     test_y_data = pd.read_csv(test_y_file_path)
 
+    # List of columns to one-hot encode
+    columns_to_encode = ['feed_nm', 'column2', 'column3']
+
+    # Apply one-hot encoding to the specified columns
+    X_train = pd.get_dummies(X_train, columns=columns_to_encode, drop_first=True)
+    X_test = pd.get_dummies(X_test, columns=columns_to_encode, drop_first=True)
+
+    # Align columns to ensure consistent input features between training and testing
+    X_train, X_test = X_train.align(X_test, join='left', axis=1)
+    X_test.fillna(0, inplace=True)
+
+
     # Encode the target variable
     label_encoder = LabelEncoder()
     housing_data_train['MODIFIED'] = label_encoder.fit_transform(housing_data_train['MODIFIED'])
