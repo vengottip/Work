@@ -21,3 +21,20 @@ try:
 except ValueError:
     # Adjust the column handling for consistency
     X_test_imputed = pd.DataFrame(X_test_transformed, columns=X_train.columns[:num_cols])
+
+# write to file
+
+# Convert predictions to a DataFrame
+import pandas as pd
+
+# Create a DataFrame with predictions
+predictions_df = pd.DataFrame(yhat_test_xgb, columns=['Predicted'])
+
+# Specify the output file path
+output_file_path = 'yhat_test_predictions.csv'
+
+# Save the DataFrame to a CSV file
+predictions_df.to_csv(output_file_path, index=False)
+
+print(f"Predictions have been saved to {output_file_path}")
+
