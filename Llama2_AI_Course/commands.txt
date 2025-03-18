@@ -1,0 +1,98 @@
+Docker env commands:
+
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker ps
+docker exec -it ollama /bin/sh
+ollama pull llama2:7b
+ollama list
+ollama pull AIresearcher:latest
+ollama pull mistral
+ollama pull gemma:2b
+
+Command line commands below:
+
+(Llama2_env_3_12) PS C:\Users\gvkri\OneDrive\Documents\Tech\BofA\work\Llama2\Llama-AdvAI-Coursera> history
+
+  Id CommandLine
+  -- -----------
+   1 try { . "c:\Users\gvkri\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+   2 dir
+   3 cd .\Llama-AdvAI-Coursera\
+   4 dir
+   5 .\.Llama2_env\Scripts\activate
+   6 git branch
+   7 git checkout 02_rag_setup
+   8 git branch
+   9 deactivate
+  10 .\Llama2_env_3_12\Scripts\activate
+  11 git branch
+  12 git checkout 03_rag_complete
+  13 dir
+  14 .\RAG.py
+  15 python .\RAG.py
+  16 pip install -r .\requirements.txt
+  17 pip install "chromadb>=0.5.0" "pydantic>=2.7.4"
+  18 python .\RAG.py
+  19 pip install -r .\requirements.txt
+  20 pip install "chromadb>=0.5.0" "pydantic>=2.7.4"
+  21 pip install langchain-community==0.2.5
+  22 python .\RAG.py
+  23 pip install langchain-huggingface==0.0.3
+  24 python .\RAG.py
+  25 pip install langchain-chroma==0.1.2
+  26 python .\RAG.py
+  27 python .\RAG.py
+  28 pip install -U sentence-transformers transformers tokenizers
+  29 pip install "transformers<4.39.0"
+  30 pip install "tokenizers==0.20.3"
+  31 pip uninstall -y transformers tokenizers langchain-huggingface chromadb
+  32 python -m pip install --upgrade pip
+  33 pip install "transformers>=4.39.0" "tokenizers>=0.21.1"
+  34 pip install "langchain-huggingface>=0.0.3"
+  35 pip install "chromadb>=0.5.25"  # Ensures compatibility with tokenizers>=0.21
+  36 pip uninstall -y chromadb langchain-chroma langchain-core
+  37 pip install "chromadb>=0.4.0,<0.6.0"
+  38 pip install "langchain-chroma==0.1.2"
+  39 pip install "langchain-core>=0.1.40,<0.3"
+  40 pip show chromadb langchain-chroma langchain-core
+  41 python RAG.py
+  42 python check
+  43 pip check
+  44 pip install "langchain-core>=0.3.15,<0.4.0"
+  45 pip install langchain-core<0.3.0,>=0.2.7
+  46 pip install "langchain-core<0.3.0,>=0.2.7"
+  47 pip install --upgrade langchain-huggingface
+  48 pip check
+  49 pip install "tokenizers<=0.20.3,>=0.13.2"
+  50 pip install --upgrade langchain-chroma
+  51 pip check
+  52 pip install --upgrade langchain langchain-community langchain-text-splitters
+  53 pip check
+  54 pip install --upgrade "tokenizers>=0.21,<0.22"
+  55 pip install tokenizers=0.20.3
+  56 pip install "tokenizers=0.20.3"
+  57 pip install "tokenizers==0.20.3"
+  58 pip uninstall -y transformers
+  59 pip install "transformers<4.49.0"
+  60 pip install "transformers<4.49.0"
+  61 pip check
+  62 pip  check transformers
+  63 pip install "tokenizers==0.20.3"
+  64 pip install "transformers<4.48.3"
+  65 pip install "tokenizers<=0.20.3"
+  66 pip install "transformers<4.48.2"
+  67 pip install "tokenizers==0.20.3"
+  68 pip install "transformers<4.47"
+  69 pip check
+  70 pip list
+  71 pip freeze > requirements.txt
+  72 dir
+  73 cat .\requirements.txt
+  74 python .\RAG.py
+  75 python .\RAG.py
+  76 python .\RAG.py
+  77 python .\RAG.py
+  78 python .\RAG.py
+  79 python .\RAG.py
+  80 clear
+  81 python .\RAG.py
