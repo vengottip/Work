@@ -1,0 +1,438 @@
+23/02/20 02:21:15 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+23/02/20 02:21:15 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+23/02/20 02:21:15 INFO input.FileInputFormat: Total input files to process : 1
+23/02/20 02:21:15 INFO mapreduce.JobSubmitter: number of splits:1
+23/02/20 02:21:15 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1710583561_0001
+23/02/20 02:21:15 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+23/02/20 02:21:15 INFO mapreduce.Job: Running job: job_local1710583561_0001
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+23/02/20 02:21:15 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:15 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Waiting for map tasks
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Starting task: attempt_local1710583561_0001_m_000000_0
+23/02/20 02:21:15 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:15 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:15 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+23/02/20 02:21:15 INFO mapred.MapTask: Processing split: file:/mapreduce-tutorial/dataset/titles20/input_20.txt:0+421
+23/02/20 02:21:15 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+23/02/20 02:21:15 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+23/02/20 02:21:15 INFO mapred.MapTask: soft limit at 83886080
+23/02/20 02:21:15 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+23/02/20 02:21:15 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+23/02/20 02:21:15 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+ line in map method of TitleCountMap Billy_Reeves
+ line in map method of TitleCountMap Smorz
+ line in map method of TitleCountMap Nationalist_Left_-_Youth
+ line in map method of TitleCountMap Ancient_Greek_units_of_measurement
+ line in map method of TitleCountMap Jiuting_(Shanghai_Metro)
+ line in map method of TitleCountMap Blodgett,_MO
+ line in map method of TitleCountMap Baekjeong
+ line in map method of TitleCountMap Matt_Brinkman
+ line in map method of TitleCountMap National_Vietnam_Veterans_Art_Museum
+ line in map method of TitleCountMap Optique_et_Precision_de_Levallois
+ line in map method of TitleCountMap Tempo_(chess)
+ line in map method of TitleCountMap Nitrosyl_tetrafluoroborate
+ line in map method of TitleCountMap Bay_of_Whales
+ line in map method of TitleCountMap Barton_Myers
+ line in map method of TitleCountMap Sam_Pitroda
+ line in map method of TitleCountMap Text_normalization
+ line in map method of TitleCountMap Densetsu_no_Stafy
+ line in map method of TitleCountMap Ohio_Edison
+ line in map method of TitleCountMap Osservatorio_Vesuvio
+ line in map method of TitleCountMap Inefficient_markets
+ line in map method of TitleCountMap Inefficient_Vesuvio
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: 
+23/02/20 02:21:15 INFO mapred.MapTask: Starting flush of map output
+23/02/20 02:21:15 INFO mapred.MapTask: Spilling map output
+23/02/20 02:21:15 INFO mapred.MapTask: bufstart = 0; bufend = 586; bufvoid = 104857600
+23/02/20 02:21:15 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214200(104856800); length = 197/6553600
+23/02/20 02:21:15 INFO mapred.MapTask: Finished spill 0
+23/02/20 02:21:15 INFO mapred.Task: Task:attempt_local1710583561_0001_m_000000_0 is done. And is in the process of committing
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: map
+23/02/20 02:21:15 INFO mapred.Task: Task 'attempt_local1710583561_0001_m_000000_0' done.
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Finishing task: attempt_local1710583561_0001_m_000000_0
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: map task executor complete.
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Starting task: attempt_local1710583561_0001_r_000000_0
+23/02/20 02:21:15 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:15 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:15 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+23/02/20 02:21:15 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4f9a240a
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=334338464, maxSingleShuffleLimit=83584616, mergeThreshold=220663392, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+23/02/20 02:21:15 INFO reduce.EventFetcher: attempt_local1710583561_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+23/02/20 02:21:15 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1710583561_0001_m_000000_0 decomp: 688 len: 692 to MEMORY
+23/02/20 02:21:15 INFO reduce.InMemoryMapOutput: Read 688 bytes from map-output for attempt_local1710583561_0001_m_000000_0
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 688, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->688
+23/02/20 02:21:15 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+23/02/20 02:21:15 INFO mapred.Merger: Merging 1 sorted segments
+23/02/20 02:21:15 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 678 bytes
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: Merged 1 segments, 688 bytes to disk to satisfy reduce memory limit
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: Merging 1 files, 692 bytes from disk
+23/02/20 02:21:15 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+23/02/20 02:21:15 INFO mapred.Merger: Merging 1 sorted segments
+23/02/20 02:21:15 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 678 bytes
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:15 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+ line in reduce method of TitleCountReduce: key is:  ancient, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  art, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  baekjeong, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  barton, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  bay, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  billy, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  blodgett, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  brinkman, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  chess, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  de, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  densetsu, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  edison, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  et, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  greek, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  inefficient, sum is: 2
+ line in reduce method of TitleCountReduce: key is:  jiuting, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  left, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  levallois, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  markets, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  matt, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  measurement, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  metro, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  mo, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  museum, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  myers, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  national, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  nationalist, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  nitrosyl, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  normalization, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  ohio, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  optique, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  osservatorio, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  pitroda, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  precision, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  reeves, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  sam, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  shanghai, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  smorz, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  stafy, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  tempo, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  tetrafluoroborate, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  text, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  units, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  vesuvio, sum is: 2
+ line in reduce method of TitleCountReduce: key is:  veterans, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  vietnam, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  whales, sum is: 1
+ line in reduce method of TitleCountReduce: key is:  youth, sum is: 1
+23/02/20 02:21:15 INFO mapred.Task: Task:attempt_local1710583561_0001_r_000000_0 is done. And is in the process of committing
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:15 INFO mapred.Task: Task attempt_local1710583561_0001_r_000000_0 is allowed to commit now
+23/02/20 02:21:15 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1710583561_0001_r_000000_0' to file:/mapreduce-tutorial/tmp/_temporary/0/task_local1710583561_0001_r_000000
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: reduce > reduce
+23/02/20 02:21:15 INFO mapred.Task: Task 'attempt_local1710583561_0001_r_000000_0' done.
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: Finishing task: attempt_local1710583561_0001_r_000000_0
+23/02/20 02:21:15 INFO mapred.LocalJobRunner: reduce task executor complete.
+23/02/20 02:21:16 INFO mapreduce.Job: Job job_local1710583561_0001 running in uber mode : false
+23/02/20 02:21:16 INFO mapreduce.Job:  map 100% reduce 100%
+23/02/20 02:21:16 INFO mapreduce.Job: Job job_local1710583561_0001 completed successfully
+23/02/20 02:21:16 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=22958
+		FILE: Number of bytes written=947778
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=21
+		Map output records=50
+		Map output bytes=586
+		Map output materialized bytes=692
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=48
+		Reduce shuffle bytes=692
+		Reduce input records=50
+		Reduce output records=48
+		Spilled Records=100
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=8
+		Total committed heap usage (bytes)=525336576
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=421
+	File Output Format Counters 
+		Bytes Written=474
+23/02/20 02:21:16 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+23/02/20 02:21:16 INFO input.FileInputFormat: Total input files to process : 1
+23/02/20 02:21:16 INFO mapreduce.JobSubmitter: number of splits:1
+23/02/20 02:21:16 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1622306959_0002
+23/02/20 02:21:16 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+23/02/20 02:21:16 INFO mapreduce.Job: Running job: job_local1622306959_0002
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+23/02/20 02:21:16 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:16 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Waiting for map tasks
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Starting task: attempt_local1622306959_0002_m_000000_0
+23/02/20 02:21:16 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:16 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:16 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+23/02/20 02:21:16 INFO mapred.MapTask: Processing split: file:/mapreduce-tutorial/tmp/part-r-00000:0+462
+23/02/20 02:21:16 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+23/02/20 02:21:16 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+23/02/20 02:21:16 INFO mapred.MapTask: soft limit at 83886080
+23/02/20 02:21:16 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+23/02/20 02:21:16 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+23/02/20 02:21:16 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+Inside the Toptitles map: key ancient , value 1
+Inside the Toptitles map: key art , value 1
+Inside the Toptitles map: key baekjeong , value 1
+Inside the Toptitles map: key barton , value 1
+Inside the Toptitles map: key bay , value 1
+Inside the Toptitles map: key billy , value 1
+Inside the Toptitles map: key blodgett , value 1
+Inside the Toptitles map: key brinkman , value 1
+Inside the Toptitles map: key chess , value 1
+Inside the Toptitles map: key de , value 1
+Inside the Toptitles map: key densetsu , value 1
+Inside the Toptitles map: key edison , value 1
+Inside the Toptitles map: key et , value 1
+Inside the Toptitles map: key greek , value 1
+Inside the Toptitles map: key inefficient , value 2
+Inside the Toptitles map: key jiuting , value 1
+Inside the Toptitles map: key left , value 1
+Inside the Toptitles map: key levallois , value 1
+Inside the Toptitles map: key markets , value 1
+Inside the Toptitles map: key matt , value 1
+Inside the Toptitles map: key measurement , value 1
+Inside the Toptitles map: key metro , value 1
+Inside the Toptitles map: key mo , value 1
+Inside the Toptitles map: key museum , value 1
+Inside the Toptitles map: key myers , value 1
+Inside the Toptitles map: key national , value 1
+Inside the Toptitles map: key nationalist , value 1
+Inside the Toptitles map: key nitrosyl , value 1
+Inside the Toptitles map: key normalization , value 1
+Inside the Toptitles map: key ohio , value 1
+Inside the Toptitles map: key optique , value 1
+Inside the Toptitles map: key osservatorio , value 1
+Inside the Toptitles map: key pitroda , value 1
+Inside the Toptitles map: key precision , value 1
+Inside the Toptitles map: key reeves , value 1
+Inside the Toptitles map: key sam , value 1
+Inside the Toptitles map: key shanghai , value 1
+Inside the Toptitles map: key smorz , value 1
+Inside the Toptitles map: key stafy , value 1
+Inside the Toptitles map: key tempo , value 1
+Inside the Toptitles map: key tetrafluoroborate , value 1
+Inside the Toptitles map: key text , value 1
+Inside the Toptitles map: key units , value 1
+Inside the Toptitles map: key vesuvio , value 2
+Inside the Toptitles map: key veterans , value 1
+Inside the Toptitles map: key vietnam , value 1
+Inside the Toptitles map: key whales , value 1
+Inside the Toptitles map: key youth , value 1
+Inside the Toptitles cleanup: key vesuvio , value 2
+Inside the Toptitles cleanup: key inefficient , value 2
+Inside the Toptitles cleanup: key youth , value 1
+Inside the Toptitles cleanup: key whales , value 1
+Inside the Toptitles cleanup: key vietnam , value 1
+Inside the Toptitles cleanup: key veterans , value 1
+Inside the Toptitles cleanup: key units , value 1
+Inside the Toptitles cleanup: key text , value 1
+Inside the Toptitles cleanup: key tetrafluoroborate , value 1
+Inside the Toptitles cleanup: key tempo , value 1
+Inside the Toptitles cleanup: key stafy , value 1
+Inside the Toptitles cleanup: key smorz , value 1
+Inside the Toptitles cleanup: key shanghai , value 1
+Inside the Toptitles cleanup: key sam , value 1
+Inside the Toptitles cleanup: key reeves , value 1
+Inside the Toptitles cleanup: key precision , value 1
+Inside the Toptitles cleanup: key pitroda , value 1
+Inside the Toptitles cleanup: key osservatorio , value 1
+Inside the Toptitles cleanup: key optique , value 1
+Inside the Toptitles cleanup: key ohio , value 1
+Inside the Toptitles cleanup: key normalization , value 1
+Inside the Toptitles cleanup: key nitrosyl , value 1
+Inside the Toptitles cleanup: key nationalist , value 1
+Inside the Toptitles cleanup: key national , value 1
+Inside the Toptitles cleanup: key myers , value 1
+Inside the Toptitles cleanup: key museum , value 1
+Inside the Toptitles cleanup: key mo , value 1
+Inside the Toptitles cleanup: key metro , value 1
+Inside the Toptitles cleanup: key measurement , value 1
+Inside the Toptitles cleanup: key matt , value 1
+Inside the Toptitles cleanup: key markets , value 1
+Inside the Toptitles cleanup: key levallois , value 1
+Inside the Toptitles cleanup: key left , value 1
+Inside the Toptitles cleanup: key jiuting , value 1
+Inside the Toptitles cleanup: key greek , value 1
+Inside the Toptitles cleanup: key et , value 1
+Inside the Toptitles cleanup: key edison , value 1
+Inside the Toptitles cleanup: key densetsu , value 1
+Inside the Toptitles cleanup: key de , value 1
+Inside the Toptitles cleanup: key chess , value 1
+Inside the Toptitles cleanup: key brinkman , value 1
+Inside the Toptitles cleanup: key blodgett , value 1
+Inside the Toptitles cleanup: key billy , value 1
+Inside the Toptitles cleanup: key bay , value 1
+Inside the Toptitles cleanup: key barton , value 1
+Inside the Toptitles cleanup: key baekjeong , value 1
+Inside the Toptitles cleanup: key art , value 1
+Inside the Toptitles cleanup: key ancient , value 1
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: 
+23/02/20 02:21:16 INFO mapred.MapTask: Starting flush of map output
+23/02/20 02:21:16 INFO mapred.MapTask: Spilling map output
+23/02/20 02:21:16 INFO mapred.MapTask: bufstart = 0; bufend = 654; bufvoid = 104857600
+23/02/20 02:21:16 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214208(104856832); length = 189/6553600
+23/02/20 02:21:16 INFO mapred.MapTask: Finished spill 0
+23/02/20 02:21:16 INFO mapred.Task: Task:attempt_local1622306959_0002_m_000000_0 is done. And is in the process of committing
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: file:/mapreduce-tutorial/tmp/part-r-00000:0+462
+23/02/20 02:21:16 INFO mapred.Task: Task 'attempt_local1622306959_0002_m_000000_0' done.
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Finishing task: attempt_local1622306959_0002_m_000000_0
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: map task executor complete.
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Starting task: attempt_local1622306959_0002_r_000000_0
+23/02/20 02:21:16 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+23/02/20 02:21:16 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+23/02/20 02:21:16 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+23/02/20 02:21:16 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4a3faa33
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=334338464, maxSingleShuffleLimit=83584616, mergeThreshold=220663392, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+23/02/20 02:21:16 INFO reduce.EventFetcher: attempt_local1622306959_0002_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+23/02/20 02:21:16 INFO reduce.LocalFetcher: localfetcher#2 about to shuffle output of map attempt_local1622306959_0002_m_000000_0 decomp: 752 len: 756 to MEMORY
+23/02/20 02:21:16 INFO reduce.InMemoryMapOutput: Read 752 bytes from map-output for attempt_local1622306959_0002_m_000000_0
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 752, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->752
+23/02/20 02:21:16 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+23/02/20 02:21:16 INFO mapred.Merger: Merging 1 sorted segments
+23/02/20 02:21:16 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 750 bytes
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: Merged 1 segments, 752 bytes to disk to satisfy reduce memory limit
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: Merging 1 files, 756 bytes from disk
+23/02/20 02:21:16 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+23/02/20 02:21:16 INFO mapred.Merger: Merging 1 sorted segments
+23/02/20 02:21:16 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 750 bytes
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:16 WARN io.ReadaheadPool: Failed readahead on ifile
+EBADF: Bad file descriptor
+	at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posix_fadvise(Native Method)
+	at org.apache.hadoop.io.nativeio.NativeIO$POSIX.posixFadviseIfPossible(NativeIO.java:267)
+	at org.apache.hadoop.io.nativeio.NativeIO$POSIX$CacheManipulator.posixFadviseIfPossible(NativeIO.java:146)
+	at org.apache.hadoop.io.ReadaheadPool$ReadaheadRequestImpl.run(ReadaheadPool.java:208)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Inside the Toptitles reduce: key ancient , value 1
+Inside the Toptitles reduce: key art , value 1
+Inside the Toptitles reduce: key baekjeong , value 1
+Inside the Toptitles reduce: key barton , value 1
+Inside the Toptitles reduce: key bay , value 1
+Inside the Toptitles reduce: key billy , value 1
+Inside the Toptitles reduce: key blodgett , value 1
+Inside the Toptitles reduce: key brinkman , value 1
+Inside the Toptitles reduce: key chess , value 1
+Inside the Toptitles reduce: key de , value 1
+Inside the Toptitles reduce: key densetsu , value 1
+Inside the Toptitles reduce: key edison , value 1
+Inside the Toptitles reduce: key et , value 1
+Inside the Toptitles reduce: key greek , value 1
+Inside the Toptitles reduce: key jiuting , value 1
+Inside the Toptitles reduce: key left , value 1
+Inside the Toptitles reduce: key levallois , value 1
+Inside the Toptitles reduce: key markets , value 1
+Inside the Toptitles reduce: key matt , value 1
+Inside the Toptitles reduce: key measurement , value 1
+Inside the Toptitles reduce: key metro , value 1
+Inside the Toptitles reduce: key mo , value 1
+Inside the Toptitles reduce: key museum , value 1
+Inside the Toptitles reduce: key myers , value 1
+Inside the Toptitles reduce: key national , value 1
+Inside the Toptitles reduce: key nationalist , value 1
+Inside the Toptitles reduce: key nitrosyl , value 1
+Inside the Toptitles reduce: key normalization , value 1
+Inside the Toptitles reduce: key ohio , value 1
+Inside the Toptitles reduce: key optique , value 1
+Inside the Toptitles reduce: key osservatorio , value 1
+Inside the Toptitles reduce: key pitroda , value 1
+Inside the Toptitles reduce: key precision , value 1
+Inside the Toptitles reduce: key reeves , value 1
+Inside the Toptitles reduce: key sam , value 1
+Inside the Toptitles reduce: key shanghai , value 1
+Inside the Toptitles reduce: key smorz , value 1
+Inside the Toptitles reduce: key stafy , value 1
+Inside the Toptitles reduce: key tempo , value 1
+Inside the Toptitles reduce: key tetrafluoroborate , value 1
+Inside the Toptitles reduce: key text , value 1
+Inside the Toptitles reduce: key units , value 1
+Inside the Toptitles reduce: key veterans , value 1
+Inside the Toptitles reduce: key vietnam , value 1
+Inside the Toptitles reduce: key whales , value 1
+Inside the Toptitles reduce: key youth , value 1
+Inside the Toptitles reduce: key inefficient , value 2
+Inside the Toptitles reduce: key vesuvio , value 2
+Inside the Toptitles reduce descending set: key vesuvio , value 2
+Inside the Toptitles reduce descending set: key inefficient , value 2
+Inside the Toptitles reduce descending set: key youth , value 1
+Inside the Toptitles reduce descending set: key whales , value 1
+Inside the Toptitles reduce descending set: key vietnam , value 1
+Inside the Toptitles reduce descending set: key veterans , value 1
+Inside the Toptitles reduce descending set: key units , value 1
+Inside the Toptitles reduce descending set: key text , value 1
+Inside the Toptitles reduce descending set: key tetrafluoroborate , value 1
+Inside the Toptitles reduce descending set: key tempo , value 1
+23/02/20 02:21:16 INFO mapred.Task: Task:attempt_local1622306959_0002_r_000000_0 is done. And is in the process of committing
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: 1 / 1 copied.
+23/02/20 02:21:16 INFO mapred.Task: Task attempt_local1622306959_0002_r_000000_0 is allowed to commit now
+23/02/20 02:21:16 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1622306959_0002_r_000000_0' to file:/mapreduce-tutorial/A-output20/_temporary/0/task_local1622306959_0002_r_000000
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: reduce > reduce
+23/02/20 02:21:16 INFO mapred.Task: Task 'attempt_local1622306959_0002_r_000000_0' done.
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: Finishing task: attempt_local1622306959_0002_r_000000_0
+23/02/20 02:21:16 INFO mapred.LocalJobRunner: reduce task executor complete.
+23/02/20 02:21:17 INFO mapreduce.Job: Job job_local1622306959_0002 running in uber mode : false
+23/02/20 02:21:17 INFO mapreduce.Job:  map 100% reduce 100%
+23/02/20 02:21:17 INFO mapreduce.Job: Job job_local1622306959_0002 completed successfully
+23/02/20 02:21:17 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=46016
+		FILE: Number of bytes written=1900239
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=48
+		Map output records=48
+		Map output bytes=654
+		Map output materialized bytes=756
+		Input split bytes=106
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=756
+		Reduce input records=48
+		Reduce output records=10
+		Spilled Records=96
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=736100352
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=478
+	File Output Format Counters 
+		Bytes Written=117
